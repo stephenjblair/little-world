@@ -1,8 +1,18 @@
-html {
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
     font-family: courier;
+    background-color: #f2e6d9 ;
 }
 
-
+.bg {
+    width: 100%;
+ 
+}
 
 /*NAVBAR*/
 
@@ -24,8 +34,8 @@ nav  {
     font-size: 1.2em;
     background-color: #000;
     position: fixed;
-    width: 100vw;
-    opacity: 0.7;
+    width: 100%;
+    opacity: 0.9;
 }
 
 nav ul {
@@ -55,6 +65,34 @@ nav ul li:hover {
     background-color: grey;
     color: #00;
 }
+
+/*ABOUT PAGE*/
+
+.about {
+    background-color: #f2e6d9;
+    margin: 0;
+    padding-top: 0;
+    width: 100%;
+}
+
+.about h1 {
+    padding-left: 10px;
+    font-size: 2em;
+}
+
+.about-container {
+    display:flex;
+}
+.about-sections {
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+    margin: 0px auto 10px auto;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
 
 @media all and (max-width: 768px) {
     .navbar-toggle {
